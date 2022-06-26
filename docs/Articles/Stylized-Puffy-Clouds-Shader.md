@@ -1,5 +1,8 @@
 ---
 template: article.html
+title: Stylized Puffy Clouds Shader
+description: Make a simple anime-esque procedural cloud using simple noises and vertex manipulation.
+icon: material/emoticon-happy
 ---
 
 # Stylized Puffy Clouds Shader
