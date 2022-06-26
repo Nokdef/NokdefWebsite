@@ -10,7 +10,7 @@ Hello World;
 
 It feels quite pretentious writing about myself on a website that is quintessentially about technical topics, but I do feel entitled to a few paragraphs on the spotlight for all my effort.
 
-I'm a 22-year-old Brazilian Technical Artist that wants to spread my knowledge around. I stumbled on game development through Valve's modding community and have managed to monetized my hobby through shaders and visual effects. 
+I'm a 22-year-old Brazilian who wants to spread my knowledge around. My actual name is Leonardo, and I'm a cat-loving Dota-addicted Technical Artist. I stumbled on game development through Valve's modding community and have managed to monetized my hobby through shaders and visual effects ever since.
 
 My main endeavor right now - aside from my regular work at Deck Nine - is to make the best free course on technical art on the internet. So far, I haven't got much to show for it, aside from a bunch of scripts that have yet to be released, but the end-goal is to have a course that makes you employable by the end of it. 
 
