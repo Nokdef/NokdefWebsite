@@ -48,3 +48,5 @@ repo_name: Follow me on Twitter!
 
 markdown_extensions:
   - meta
+  - attr_list
+  - md_in_html
