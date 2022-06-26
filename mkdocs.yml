@@ -3,8 +3,8 @@ theme:
   name: material
   palette:
     scheme: slate
-    primary: deep orange
-    accent: orange
+    primary: green
+    accent: teal
   font:
     code: Roboto Mono
   features:
