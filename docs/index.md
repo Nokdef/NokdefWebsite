@@ -2,10 +2,11 @@
 hide:
   - navigation
   - toc
+title: Home
 ---
 # So, who is this *"Nokdef"* guy anyway?
 
-Hello World. 
+Hello World; 
 
 It feels quite pretentious writing about myself on a website that is quintessentially about technical topics, but I do feel entitled to a few paragraphs on the spotlight for all my effort.
 
