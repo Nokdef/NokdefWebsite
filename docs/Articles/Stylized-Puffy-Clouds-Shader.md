@@ -1,7 +1,6 @@
 ---
 template: article.html
-title: Puffy Clouds Shader
-description: testeste
+title: ☁️ Puffy Clouds Shader
 ---
 
 # Stylized Puffy Clouds Shader :cloud:  
