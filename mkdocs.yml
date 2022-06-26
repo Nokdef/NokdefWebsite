@@ -13,6 +13,7 @@ theme:
     - navigation.top
   icon:
     repo: fontawesome/brands/twitter
+  custom_dir: overrides
 
 plugins:
   - search
@@ -45,3 +46,5 @@ extra:
 repo_url: https://twitter.com/MrNokdef
 repo_name: Follow me on Twitter!
 
+markdown_extensions:
+  - meta
