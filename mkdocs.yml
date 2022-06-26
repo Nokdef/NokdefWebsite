@@ -14,22 +14,22 @@ theme:
   plugins:
   - search
   extra:
-  generator: false
-  social:
-    - icon: fontawesome/brands/twitter 
-      link: https://twitter.com/MrNokdef
-      name: Leo's Personal Twitter
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:<leonardo.v.alvarez@hotmail.com>
-    - icon: fontawesome-brands-youtube
-      link: https://www.youtube.com/nokdef
-      name: Nokdef's Channel
-    - icon: fontawesome-brands-youtube
-      link: https://www.youtube.com/pilotostudio
-      name: Piloto Studio's Channel
-    - icon: fontawesome-brands-unity
-      link: https://assetstore.unity.com/publishers/48767
-      name: Our Online Store
-    - icon: fontawesome-brands-artstation
-      link: https://www.artstation.com/nokdef
+    generator: false
+    social:
+      - icon: fontawesome/brands/twitter 
+        link: https://twitter.com/MrNokdef
+        name: Leo's Personal Twitter
+      - icon: fontawesome/solid/paper-plane
+        link: mailto:<leonardo.v.alvarez@hotmail.com>
+      - icon: fontawesome-brands-youtube
+        link: https://www.youtube.com/nokdef
+        name: Nokdef's Channel
+      - icon: fontawesome-brands-youtube
+        link: https://www.youtube.com/pilotostudio
+        name: Piloto Studio's Channel
+      - icon: fontawesome-brands-unity
+        link: https://assetstore.unity.com/publishers/48767
+        name: Our Online Store
+      - icon: fontawesome-brands-artstation
+        link: https://www.artstation.com/nokdef
 copyright: Copyright &copy; 2022 Leonardo Vieira
