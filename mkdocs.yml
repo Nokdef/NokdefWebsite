@@ -27,3 +27,6 @@ extra:
     - icon: fontawesome/brands/twitter 
       link: https://twitter.com/MrNokdef
       name: Leo's Personal Twitter
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<leonardo.v.alvarez@hotmail.com>
+      name: Shoot me an E-Mail
