@@ -3,10 +3,10 @@ template: article.html
 title: Puffy Clouds Shader
 subtitle: testing Subtitles
 description: >
-  material/emoticon-cloud  Make a simple anime-esque procedural cloud using simple noises and vertex manipulation.  material/emoticon-cloud
+  Make a simple anime-esque procedural cloud using simple noises and vertex manipulation.
 ---
 
-# Stylized Puffy Clouds Shader
+# material/emoticon-cloud Stylized Puffy Clouds Shader material/emoticon-cloud  
 ___
 
 * Testing Things
