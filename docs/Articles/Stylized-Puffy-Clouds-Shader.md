@@ -4,9 +4,7 @@ title: ☁️ Puffy Clouds Shader
 ---
 
 # Stylized Puffy Clouds Shader :cloud:  
-
-A quick way of getting fluffy anime-esque clouds using a simple noise and vertex manipulation. Reasonably cheap technique, perfect for eerie backgrounds.
-
+###### A quick way of getting fluffy anime-esque clouds using a simple noise and vertex manipulation. Reasonably cheap technique, perfect for eerie backgrounds.
 ___
 
 * Testing Things
