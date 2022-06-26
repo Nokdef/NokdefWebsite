@@ -3,8 +3,8 @@ template: article.html
 title: ☁️ Puffy Clouds Shader
 ---
 
-# <span style="color:red">Stylized Puffy Clouds Shader</span>
-A quick way of getting fluffy anime-esque clouds using a simple noise and vertex manipulation. Reasonably cheap technique, perfect for eerie backgrounds.
+# <span style="color:lime">Stylized Puffy Clouds Shader</span>
+<span style="font-size:.75em; color:green">A quick way of getting fluffy anime-esque clouds using a simple noise and vertex manipulation. Reasonably cheap technique, perfect for eerie backgrounds.</span>
 ___
 
 
