@@ -1,3 +1,9 @@
+
+---
+hide:
+  - navigation
+  - toc
+---
 # So, who is this *"Nokdef"* guy anyway?
 
 Hello World. 
@@ -14,7 +20,7 @@ In the meantime, I'll try to update my [YouTube](https://www.youtube.com/c/nokde
 
 I also make a bunch of Unity assets that I sell on the [Unity Asset Store](https://assetstore.unity.com/publishers/48767), so you can get some high quality effects there from yours truly.
 
-Thanks for reading! :grin:
+Thanks for reading!  :grin:
 
 
 
