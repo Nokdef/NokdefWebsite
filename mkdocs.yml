@@ -4,7 +4,7 @@ theme:
   palette:
     scheme: slate
     primary: deep orange
-    accent: yellow
+    accent: orange
   font:
     code: Roboto Mono
   features:
