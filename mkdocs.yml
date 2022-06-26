@@ -31,5 +31,13 @@ extra:
       link: mailto:<leonardo.v.alvarez@hotmail.com>
       name: Shoot me an E-Mail
     - icon: fontawesome/brands/youtube
-      link: https://twitter.com/MrNokdef
+      link: https://www.youtube.com/c/nokdef
       name: Nokdef's Channel
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/pilotostudio
+      name: Piloto Studio's Channel
+    - icon: fontawesome/brands/unity
+      link: https://assetstore.unity.com/publishers/48767
+      name: Our Online Store
+    - icon: fontawesome/brands/artstation
+      link: https://www.artstation.com/nokdef
