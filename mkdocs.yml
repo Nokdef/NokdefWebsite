@@ -7,12 +7,15 @@ theme:
     accent: light blue
   font:
     code: Roboto Mono
-  features:
-    - navigation.tabs
-    - navigation.indexes
-    - navigation.top
-  plugins:
-  - search
+
+features:
+  - navigation.tabs
+  - navigation.indexes
+  - navigation.top
+
+
+plugins:
+ - search
 extra:
   social:
     - icon: fontawesome/brands/twitter 
@@ -31,6 +34,7 @@ extra:
       name: Our Online Store
     - icon: fontawesome-brands-artstation
       link: https://www.artstation.com/nokdef
-copyright: Copyright &copy; 2022 Leonardo Vieira estintggaa
+
+copyright: Copyright &copy; 2022 Leonardo Vieira Test1
 
 
