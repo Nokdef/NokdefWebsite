@@ -12,10 +12,3 @@ ___
 <figure markdown>
 ![Test Picture](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/FUCJrksWYAA4fXD.jpg){ width="600" }
 <figcaption> Space Jelly Painting</figcaption> </figure>
-
-
-<style>
-  .md-typeset h1{
-    display: none;
-  }
-</style>
