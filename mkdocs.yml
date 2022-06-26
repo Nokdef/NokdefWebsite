@@ -17,6 +17,19 @@ plugins:
   - search
 
 
-copyright: Copyright &copy; 2022 Leonardo Vieira Test1
+extra:
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/MrNokdef
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<leonardo.v.alvarez@hotmail.com>
+    - icon: fontawesome-brands-youtube
+      link: https://www.youtube.com/nokdef
+    - icon: fontawesome-brands-unity
+      link: https://assetstore.unity.com/publishers/48767
+    - icon: fontawesome-brands-artstation
+      link: https://www.artstation.com/nokdef
+
+copyright: Copyright &copy; 2022 Leonardo Vieira Test2
 
 
