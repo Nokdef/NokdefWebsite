@@ -2,7 +2,7 @@
 template: article.html
 title: is this working?
 description: >
-   material/emoticon-cloud  Make a simple anime-esque procedural cloud using simple noises and vertex manipulation.  material/emoticon-cloud
+  material/emoticon-cloud  Make a simple anime-esque procedural cloud using simple noises and vertex manipulation.  material/emoticon-cloud
 ---
 # Stylized Puffy Clouds Shader
 ___
