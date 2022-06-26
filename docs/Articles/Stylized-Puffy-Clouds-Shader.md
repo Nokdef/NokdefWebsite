@@ -1,7 +1,5 @@
 ---
 template: overrides/article.html
-title: >
-  :cloud: is this working?
 description: >
   Make a simple anime-esque procedural cloud using simple noises and vertex manipulation.
 ---
