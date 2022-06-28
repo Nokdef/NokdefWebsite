@@ -24,7 +24,7 @@ On Unity, let's make a new surface shader on Amplify. We'll call it Puffy Clouds
 ![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-1.png){ width="900" }</figure>
 Let's open that up and make sure some of the settings are properly set.
 <figure markdown>
-![Shader Settings](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-2.png){ width="900" }</figure>
+![Shader Settings](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-2.png){ width="500" }</figure>
 Only the highlighted options need to be set accordinly, let's go over them individually.
 
 * Shader Model - Anything above 4.6 will work here. This is just so tessellation plays nice. 
@@ -32,3 +32,4 @@ Only the highlighted options need to be set accordinly, let's go over them indiv
 * Render Type / Blend RGB - We just want to ensure we're doing the traditional alpha blend (Relevant for Depth Pass later).
 * Tessellation - Make sure this is enabled. I use an Edge Length of 25, but this value will be exposed on a per-material basis, so we don't need to worry too much about it. 
 * Depth - Make sure we're z-writing.
+
