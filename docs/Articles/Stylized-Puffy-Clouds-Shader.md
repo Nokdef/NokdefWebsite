@@ -33,3 +33,4 @@ Only the highlighted options need to be set accordinly, let's go over them indiv
 * Tessellation - Make sure this is enabled. I use an Edge Length of 25, but this value will be exposed on a per-material basis, so we don't need to worry too much about it. 
 * Depth - Make sure we're z-writing.
 
+# Logic

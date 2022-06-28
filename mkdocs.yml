@@ -11,6 +11,7 @@ theme:
     - navigation.tabs
     - navigation.indexes
     - navigation.top
+    - navigation.tracking
   icon:
     repo: fontawesome/brands/twitter
   custom_dir: overrides
@@ -56,4 +57,5 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-
+  - toc:
+      permalink: fontawesome-arrow-turn-right
