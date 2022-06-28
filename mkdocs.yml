@@ -58,4 +58,4 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - toc:
-      permalink: 📢
+      permalink: arrow-turn-right
