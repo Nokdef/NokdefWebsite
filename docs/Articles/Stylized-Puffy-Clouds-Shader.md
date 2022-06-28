@@ -14,4 +14,10 @@ Here you can see the clouds in isolation, using more neutral elements to showcas
 <div style="padding-bottom: 56.25%; position: relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/x99FqxiKzlc?autoplay=1&fs=0&loop=1&modestbranding=1&mute=1&playlist=x99FqxiKzlc&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>YouTube embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
 !!! warning "Before you read..."
     Please keep in mind, <span style="color:red;font-size:1em;font-weight:bold">we'll be using Amplify Shader Editor in this tutorial</span>, but the knowledge and concepts behind it can be easily converted to Shadergraph, HLSL or Unreal's material editor.
+    
+    We'll also be using the default built-in rendering pipeline, which again,
+    can be easily converted, especially since this is a Unlit shader.
+
+# Graph Setup
+On Unity, let's make a new surface shader on Amplify. We'll call it Puffy Clouds.
 
