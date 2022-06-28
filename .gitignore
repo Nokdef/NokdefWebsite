@@ -26,3 +26,4 @@ docs/.obsidian/plugins/sliding-panes-obsidian/styles.css
 docs/.obsidian/snippets/fontFixer.css
 docs/.obsidian/themes/Minimal.css
 docs/.obsidian/themes/Things.css
+*.md
