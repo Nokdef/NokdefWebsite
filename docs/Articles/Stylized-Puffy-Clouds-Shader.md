@@ -20,7 +20,5 @@ Here you can see the clouds in isolation, using more neutral elements to showcas
 ___
 # Graph Setup
 On Unity, let's make a new surface shader on Amplify. We'll call it Puffy Clouds.
-![[Website embed settings.png]]
 <figure markdown>
-![Test Picture]( PUT LINK FOR IMAGE HERE ){ width="600" }
-<figcaption> Space Jelly Painting</figcaption> </figure>
+![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-1.png){ width="600" }</figure>
