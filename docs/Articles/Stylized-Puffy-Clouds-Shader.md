@@ -17,7 +17,10 @@ Here you can see the clouds in isolation, using more neutral elements to showcas
     
     We'll also be using the default built-in rendering pipeline, which again,
     can be easily converted, especially since this is a Unlit shader.
-
+___
 # Graph Setup
 On Unity, let's make a new surface shader on Amplify. We'll call it Puffy Clouds.
-
+![[Website embed settings.png]]
+<figure markdown>
+![Test Picture]( PUT LINK FOR IMAGE HERE ){ width="600" }
+<figcaption> Space Jelly Painting</figcaption> </figure>
