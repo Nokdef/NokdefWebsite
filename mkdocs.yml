@@ -1,4 +1,4 @@
-site_name: Nokdef
+﻿site_name: Nokdef
 theme:
   name: material
   palette:
@@ -58,4 +58,4 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - toc:
-      permalink: fontawesome-arrow-turn-right
+      permalink: 📢
