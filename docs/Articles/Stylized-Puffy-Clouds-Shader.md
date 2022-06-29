@@ -34,4 +34,8 @@ Only the highlighted options need to be set accordinly, let's go over them indiv
 * Tessellation - Make sure this is enabled. I use an Edge Length of 25, but this value will be exposed on a per-material basis, so we don't need to worry too much about it. 
 * Depth - Make sure we're z-writing.
 ---
-## Logic
+## Making the Puffiness
+We achieve the puffiness of the clouds through vertex manipulation, meaning we change the position of each individual vertex of a given 3D model (in this case a plane) over time to shape it like a stylized cloud. We also apply tessellation to our cloud, which essentially generates new vertices in real time to fit our needs. This can mean a loss of control over how expensive the cloud gets, but if you are adapting this for a more performance sensitive project, you could always pre-subdivide the plane and drop the tessellation from the shader.
+<figure markdown>
+![Vertex Demonstration](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-3.png){ width="600" }
+<figcaption> Vertex are the points in 3D space that define a model's geometry. In red we can see one being pushed upwards. This is what our shader will do, but with a lot more points.</figcaption> </figure>
