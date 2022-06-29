@@ -42,5 +42,7 @@ We achieve the puffiness of the clouds through vertex manipulation, meaning we c
 So, let's make our vertex manipulation shader!
 
 For this, we'll be using 4 layers of moving noises, the noises will control the height of each individual vertex point. Later, we'll blend all 4 layers together, which helps with the complexity of the cloud, and adds some nice "wrinkles" to the cloud. 
-
+<figure markdown>
+![Vertex Demonstration](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-4.png){ width="700" }
+<figcaption> Wrinkles highligted.</figcaption> </figure>
 
