@@ -53,7 +53,7 @@ To avoid writing the same code on Amplify 4 times, let's make a shader function,
 Inside the function, make a new **Noise Generator** node. You'll notice it will be completely gray. We need to feed the inputs for this node to make anything show up. 
 
 Let's start with the scale, this increases or decreases the size of the noise relative to the box, essentially how "zoomed in" we are. Make a new **Function Input** and name it **Noise Scale**.
-!!! info
+!!! info "How do I name my Function Input?"
     You can change the name/settings of any node in Amplify by selecting the node and changing its settings on the left-side panel.
 
 Finally, if you plug a **Texture Coordinates** node onto the UV input, you'll see that as you change the default value of the **Noise Scale** input, the noise preview will change accordingly. I'll leave it at 5 for now. 
