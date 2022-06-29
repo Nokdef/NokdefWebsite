@@ -86,9 +86,21 @@ This would already work really well for a cloud layer. However, I'd like to add 
 
 First, let's add the option to make some darker parts of our noise influence the vertex data more meaningfully.
 
-As you know, black pixels have no influence on the vertex data of our clouds, so we can turn these black pixels into negative pixels, then we can turn those negative pixels back into positive values. We can achieve this through **Remap** and **ABS**.
+As you know, black pixels have no influence on the vertex data of our clouds, so we can turn these black pixels into negative pixels, then we can turn those negative pixels back into positive values. We can achieve this through **Remap** and **Abs**.
 
 All remap does, is that it turns a given range of values into another given range of values linearly, think of it as a cross-multiplication operator for your shaders.
 
 So, we can turn our black pixels into negative values by declaring a node structure like so: 
 
+<figure markdown>
+![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-8.png){ width="900" }</figure>
+This means, our previous pixels with a value of 0 (black) are now -1.
+Make sure to turn the **Noise Remap** into a **Function Input** so we can change its value later on our materials. 
+
+Remember I mentioned we'd turn the negative values onto positive values, so we could add that extra data as vertex displacement later? Well, to do it, you can simply add an **Abs** node after remap.
+
+!!! info "How does **Abs** work?"
+    It gives you the mathematical Absolute value or Modulus of a given number. It is essentially "how far from zero is this number?" indicator. Meaning that the Modulus of <span style="color:orange;font-size:1em">3</span> and <span style="color:orange;font-size:1em">-3</span> is <span style="color:orange;font-size:1em">3</span>! Since both are <span style="color:orange;font-size:1em">3</span> numbers away from zero!
+
+!!! question "Why not use **Negate** or Multiply it all by -1?"
+	Essentially, we use **Abs** when we're not sure if the number is positive or negative. In our case, we'll never truly know if each individual pixel we're operating is positive or negative, so this rules out **Negate** as a viable option. As for multiplying the pixels by -1, we'd need to check for each individual pixel if they are negative before doing it, which is prohibitively expensive. Thankfully, basic arithmetics come in clutch with **Abs** to save the day.
