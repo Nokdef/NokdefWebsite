@@ -43,6 +43,15 @@ So, let's make our vertex manipulation shader!
 
 For this, we'll be using 4 layers of moving noises, the noises will control the height of each individual vertex point. Later, we'll blend all 4 layers together, which helps with the complexity of the cloud, and adds some nice "wrinkles" to the cloud. 
 <figure markdown>
-![Vertex Demonstration](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-4.png){ width="700" }
+![Wrinkles](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-4.png){ width="700" }
 <figcaption> Wrinkles highligted.</figcaption> </figure>
+### Let's make the layer function
+To avoid writing the same code on Amplify 4 times, let's make a shader function, I'll call mine Clouds Layer;
 
+<figure markdown>
+![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-5.png){ width="900" }</figure>
+Inside the function, make a new **Noise Generator** node. You'll notice it will be completely gray. We need to feed the inputs for this node to make anything show up. 
+
+Let's start with the scale, this increases or decreases the size of the noise relative to the box, essentially how "zoomed in" we are. Make a new **Function Input** and name it **Noise Scale**.
+!!! info
+    You can change the name/settings of any node in Amplify by selecting the node and changing it's settings on the left-side panel.
