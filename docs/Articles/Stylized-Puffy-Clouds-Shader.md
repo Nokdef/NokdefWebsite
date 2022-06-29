@@ -59,3 +59,6 @@ Let's start with the scale, this increases or decreases the size of the noise re
 Finally, if you plug a **Texture Coordinates** node onto the UV input, you'll see that as you change the default value of the **Noise Scale** input, the noise preview will change accordingly. I'll leave it at 5 for now. 
 
 Your graph should look something like this now: 
+
+<figure markdown>
+![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-6.png){ width="900" }</figure>
