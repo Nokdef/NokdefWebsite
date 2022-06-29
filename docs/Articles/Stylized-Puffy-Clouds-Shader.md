@@ -54,4 +54,8 @@ Inside the function, make a new **Noise Generator** node. You'll notice it will 
 
 Let's start with the scale, this increases or decreases the size of the noise relative to the box, essentially how "zoomed in" we are. Make a new **Function Input** and name it **Noise Scale**.
 !!! info
-    You can change the name/settings of any node in Amplify by selecting the node and changing it's settings on the left-side panel.
+    You can change the name/settings of any node in Amplify by selecting the node and changing its settings on the left-side panel.
+
+Finally, if you plug a **Texture Coordinates** node onto the UV input, you'll see that as you change the default value of the **Noise Scale** input, the noise preview will change accordingly. I'll leave it at 5 for now. 
+
+Your graph should look something like this now: 
