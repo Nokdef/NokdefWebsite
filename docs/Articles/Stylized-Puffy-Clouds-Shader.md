@@ -45,6 +45,9 @@ For this, we'll be using 4 layers of moving noises, the noises will control the 
 <figure markdown>
 ![Wrinkles](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-4.png){ width="700" }
 <figcaption> Wrinkles highligted.</figcaption> </figure>
+The rule of thumb is that the brighter our noise, the more our clouds will "puff out", and the darker the noise, the less. 
+
+**This means that white pixels will have most influence over our vertex data, and black pixels will have the least.** 
 ### Let's make the layer function
 To avoid writing the same code on Amplify 4 times, let's make a shader function, I'll call mine Clouds Layer;
 
@@ -78,4 +81,14 @@ Then we gotta ensure one of the noises is faster than the other, I did this by m
 !!! question "Why **Divide** at the end?"
     The noise generated ranges from 0 to 1. 0 means the vertex will be unmoved, while a value of 1 will raise the vertex upwards to generate the fluffiness. Since we're adding 2 noises together that have values peaking at 1, we'll inevitably have some parts of the result that will extrapolate the limit of 1 (2, 1.5, etc). 
     When we divide these values, we'll ensure that the highest possible value is always 1.
+
+This would already work really well for a cloud layer. However, I'd like to add some extra knobs we can tune later.
+
+First, let's add the option to make some darker parts of our noise influence the vertex data more meaningfully.
+
+As you know, black pixels have no influence on the vertex data of our clouds, so we can turn these black pixels into negative pixels, then we can turn those negative pixels back into positive values. We can achieve this through **Remap** and **ABS**.
+
+All remap does, is that it turns a given range of values into another given range of values linearly, think of it as a cross-multiplication operator for your shaders.
+
+So, we can turn our black pixels into negative values by declaring a node structure like so: 
 
