@@ -62,3 +62,20 @@ Your graph should look something like this now:
 
 <figure markdown>
 ![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-6.png){ width="900" }</figure>
+
+Now, to add extra complexity, let's duplicate everything except the **Noise Scale** and add them together by plugging both noises onto an **add** node.
+
+This might seem redundant for now, but we want to make these noises move over time. So let's create a new **Function Input** and name it **Noise Speed**.
+
+Our idea is to offset the noises by a given multiplier (**Noise Speed**) over time, then make one of the noises slightly slower, thus making our final addition a mishmash of different speed noises. 
+
+We can do this by multiplying our **Noise Speed** by a **Time** node, I'm also using the **Time** node on a .1 scale, since I want the clouds to be very slow moving.
+
+Then we gotta ensure one of the noises is faster than the other, I did this by multiplying the bottom speed by .5, thus halving it.
+
+<figure markdown>
+![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-7.png){ width="900" }</figure>
+!!! question "Why **Divide** at the end?"
+    The noise generated ranges from 0 to 1. 0 means the vertex will be unmoved, while a value of 1 will raise the vertex upwards to generate the fluffiness. Since we're adding 2 noises together that have values peaking at 1, we'll inevitably have some parts of the result that will extrapolate the limit of 1 (2, 1.5, etc). 
+    When we divide these values, we'll ensure that the highest possible value is always 1.
+
