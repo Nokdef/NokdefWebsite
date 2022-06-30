@@ -115,3 +115,12 @@ Now, we are done with the function! If we go back to our original shader file, P
 <figure markdown>
 ![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-11.png){ width="900" }</figure>
 ## Piecing our layers together
+First, let's just create a matching set of variables to our shader so we can feed our function.
+
+To do this, simply hold 1 and click anywhere on the graph. We want to make sure to change the newly created floats to properties, to make them exposed on our material later. 
+!!! info "How to change the type of variable"
+    On the left side, you have Amplify's built-in inspector. Selecting a node will allow you to change its settings inside that panel. On the **Type** dropdown, you can change it from **Constant** to **Property**.
+After making the matching set of variables, you can plug them in accordingly.
+<figure markdown>
+![Variables](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-12.png){ width="900" }</figure>
+We'll be prefacing all of our variables with "Layer X", since we'll have 4 layers of vertex displacement.
