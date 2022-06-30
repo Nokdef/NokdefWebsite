@@ -102,5 +102,15 @@ Remember I mentioned we'd turn the negative values onto positive values, so we c
 !!! info "How does **Abs** work?"
     It gives you the mathematical Absolute value or Modulus of a given number. It is essentially "how far from zero is this number?" indicator. Meaning that the Modulus of <span style="color:orange;font-size:1em">3</span> and <span style="color:orange;font-size:1em">-3</span> is <span style="color:orange;font-size:1em">3</span>! Since both are <span style="color:orange;font-size:1em">3</span> numbers away from zero!
 
-!!! question "Why not use **Negate** or Multiply it all by -1?"
+!!! question "Why not use **Negate** or Multiply by -1?"
 	Essentially, we use **Abs** when we're not sure if the number is positive or negative. In our case, we'll never truly know if each individual pixel we're operating is positive or negative, so this rules out **Negate** as a viable option. As for multiplying the pixels by -1, we'd need to check for each individual pixel if they are negative before doing it, which is prohibitively expensive. Thankfully, basic arithmetics come in clutch with **Abs** to save the day.
+Finally, we'll add a master multiplier that goes over the final result, we can promote that variable, calling it **Noise Multiplier** and plug the final result onto the final **Output** node.
+<figure markdown>
+![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-9.png){ width="900" }</figure>
+Your final graph should look like this:
+<figure markdown>
+![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-10.png){ width="900" }</figure>
+Now, we are done with the function! If we go back to our original shader file, PuffyClouds, you can create it by dragging and dropping the function from the file explorer, or by searching it on the node search!
+<figure markdown>
+![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-11.png){ width="900" }</figure>
+## Piecing our layers together
