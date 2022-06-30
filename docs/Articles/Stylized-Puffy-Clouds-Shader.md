@@ -109,8 +109,9 @@ Finally, we'll add a master multiplier that goes over the final result, we can p
 ![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-9.png){ width="900" }</figure>
 Your final graph should look like this:
 <figure markdown>
-![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-10.png){ width="900" }</figure>
-Now, we are done with the function! If we go back to our original shader file, PuffyClouds, you can create it by dragging and dropping the function from the file explorer, or by searching it on the node search!
+![FullGraph](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-10.png){ width="900" }
+<figcaption> Open in a new tab to see it in full resolution.</figcaption> </figure>
+Now, we are done with the function! If we go back to our original shader file, PuffyClouds, you can create a node with our function inside it by dragging and dropping the function from the file explorer, or by searching it on the node search!
 <figure markdown>
 ![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-11.png){ width="900" }</figure>
 ## Piecing our layers together
