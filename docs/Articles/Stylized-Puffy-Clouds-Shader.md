@@ -124,3 +124,7 @@ After making the matching set of variables, you can plug them in accordingly.
 <figure markdown>
 ![Variables](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-12.png){ width="900" }</figure>
 We'll be prefacing all of our variables with "Layer X", since we'll have 4 layers of vertex displacement.
+
+Let's go ahead and repeat this process for all 4 layers. This means we'll have 16 properties on our material to start with, which can get a little messy. To avoid confusing materials, you can reorder the properties layout and clump the layers together as shown below:
+<figure markdown>
+![Variables](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-13.png){ width="900" }</figure>
