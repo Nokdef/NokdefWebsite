@@ -147,3 +147,23 @@ If you want, you can play with the material parameters to find variations that c
 
 ---
 ## Color & Transparency
+The way we're handling color is by driving it along our vertex offset. 
+
+The same value we use to drive our vertices going up and down can be used to drive our color shifting from color A to color B. To do this, we need to a **Lerp** node.
+
+Simply plug our combined layers onto the **Alpha** input of the **Lerp** node, then, create 2 color for the **A** and **B** inputs, like so:
+<figure markdown>
+![Color Lerp](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-15.png){ width="900" }</figure>
+Make sure those colors are exposed to the material by turning them into a Property. 
+
+Before we jump into transparency, make sure to enable HDR on each color node by expanding the attributes panel on the Amplify inspector:
+<figure markdown>
+![Color Lerp](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-16.png){ width="900" }</figure>
+Now, if you plug that straight into emission, you'll be able to color your clouds on the material inspector.
+
+These can be iterated rather quickly, so don't be afraid to experiment!
+
+<div style="padding-bottom: 56.25%; position: relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/D7MdTwObkdI?autoplay=1&fs=0&loop=1&modestbranding=1&mute=1&playlist=D7MdTwObkdI&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>YouTube embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
+<div style="padding-bottom: 56.25%; position: relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/-unbh1qFkd4?autoplay=1&fs=0&loop=1&modestbranding=1&mute=1&playlist=-unbh1qFkd4&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>YouTube embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
+
+### Transparency
