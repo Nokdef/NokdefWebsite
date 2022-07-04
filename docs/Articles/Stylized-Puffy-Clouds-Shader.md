@@ -141,6 +141,18 @@ Something is clearly wrong. Aside from no color, the distortion of the plane is 
 
 <div style="padding-bottom: 56.25%; position: relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/LruJ4OqO8T4?autoplay=1&fs=0&loop=1&modestbranding=1&mute=1&playlist=LruJ4OqO8T4&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>YouTube embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
 
+Now, we need to make sure our distortion is going upwards and downwards, since right now everything has a slight tilt on distortion direction. 
+
+The proper way of doing this is by multiplying everything by the **Normal Direction** of the mesh's face.
+<figure markdown>
+![Normal Multiplication](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-17.png){ width="900" }</figure>
+The way the math behind this works, is that each individual piece of your place has an imaginary line that points towards a given direction. This line is used to calculate thing like reflections, but the data can be used to do custom shader behaviors such as this one.
+
+A nice visualization of this can be done on Blender, here you can see many shapes with some blue lines sticking out of them, the blue line is the **Normal Direction** of their faces.
+<figure markdown>
+![Normal Visualization](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-18.png){ width="900" }</figure>
+Notice how the plane has the normal direction going straight across it, exactly how we want it to be.
+
 Our layers are now working as expected, this is really the hard part of the shader, it's smooth sailing from now on! 
 
 If you want, you can play with the material parameters to find variations that catch your eye!
@@ -163,7 +175,8 @@ Now, if you plug that straight into emission, you'll be able to color your cloud
 
 These can be iterated rather quickly, so don't be afraid to experiment!
 
+Arcane Cloud:
 <div style="padding-bottom: 56.25%; position: relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/D7MdTwObkdI?autoplay=1&fs=0&loop=1&modestbranding=1&mute=1&playlist=D7MdTwObkdI&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>YouTube embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
+Poisonous Fume:
 <div style="padding-bottom: 56.25%; position: relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/-unbh1qFkd4?autoplay=1&fs=0&loop=1&modestbranding=1&mute=1&playlist=-unbh1qFkd4&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>YouTube embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
-
 ### Transparency
