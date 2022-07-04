@@ -180,3 +180,26 @@ Arcane Cloud:
 Poisonous Fume:
 <div style="padding-bottom: 56.25%; position: relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/-unbh1qFkd4?autoplay=1&fs=0&loop=1&modestbranding=1&mute=1&playlist=-unbh1qFkd4&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>YouTube embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
 ### Transparency
+We want our cloud to become fuzzy and fade away when it touches other surfaces, this removes the harsh lines where the cloud intersects with the crystals. 
+
+To do this, simply add a **Depth Fade** node followed by **Saturate** on the emission of our shader. 
+!!! info "Why Saturate?"
+	**Saturate** is the same as **Clamp**, it makes sure our values are between 0 and 1.
+	The advantage of **Saturate** is that it is usually free, since it is supported by [Microsoft's shader assembly](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx9-graphics-reference-asm-ps-instructions-modifiers-ps-1-x?redirectedfrom=MSDN), thus writable in a single instruction.
+	This doesn't mean that all GPUs can write X in equal speed to Saturated X, but most GPUs which support DirectX should be able to.
+We also want to create an exposed float variable, called **Depth Bias**, which we'll use to control how harsh the fade will be. Plug that into the **Distance** input of our **Depth Fade** node.
+
+<figure markdown>
+![Color Lerp](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-19.png){ width="900" }</figure>
+Now, our clouds are working as expected:
+<div style="padding-bottom: 56.25%; position: relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/EB90xDK3KZk?autoplay=1&fs=0&loop=1&modestbranding=1&mute=1&playlist=EB90xDK3KZk&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>YouTube embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
+And our final graph looks like this:
+<figure markdown>
+![FullGraph](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-20.png){ width="900" }
+<figcaption> [Open in a new tab to see it in full resolution.](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-20.png)</figcaption> </figure>
+And, our functions:
+<figure markdown>
+![FullGraph](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-10.png){ width="900" }
+<figcaption> [Open in a new tab to see it in full resolution.](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-10.png)</figcaption> </figure>
+
+Thanks for reading!
