@@ -33,6 +33,9 @@ Only the highlighted options need to be set accordinly, let's go over them indiv
 * Render Type / Blend RGB - We just want to ensure we're doing the traditional alpha blend (Relevant for Depth Pass later).
 * Tessellation - Make sure this is enabled. I use an Edge Length of 25, but this value will be exposed on a per-material basis, so we don't need to worry too much about it. 
 * Depth - Make sure we're z-writing.
+
+I'll also make my shader unlit, but if you want it to be affected by lighting, you can.
+
 ---
 ## Making the Puffiness
 We achieve the puffiness of the clouds through vertex manipulation, meaning we change the position of each individual vertex of a given 3D model (in this case a plane) over time to shape it like a stylized cloud. We also apply tessellation to our cloud, which essentially generates new vertices in real time to fit our needs. This can mean a loss of control over how expensive the cloud gets, but if you are adapting this for a more performance sensitive project, you could always pre-subdivide the plane and drop the tessellation from the shader.
@@ -110,7 +113,7 @@ Finally, we'll add a master multiplier that goes over the final result, we can p
 Your final graph should look like this:
 <figure markdown>
 ![FullGraph](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-10.png){ width="900" }
-<figcaption> Open in a new tab to see it in full resolution.</figcaption> </figure>
+<figcaption> [Open in a new tab to see it in full resolution.](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-10.png)</figcaption> </figure>
 Now, we are done with the function! If we go back to our original shader file, PuffyClouds, you can create a node with our function inside it by dragging and dropping the function from the file explorer, or by searching it on the node search!
 <figure markdown>
 ![Creating Shader](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-11.png){ width="900" }</figure>
@@ -128,3 +131,19 @@ We'll be prefacing all of our variables with "Layer X", since we'll have 4 layer
 Let's go ahead and repeat this process for all 4 layers. This means we'll have 16 properties on our material to start with, which can get a little messy. To avoid confusing materials, you can reorder the properties layout and clump the layers together as shown below:
 <figure markdown>
 ![Variables](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-13.png){ width="900" }</figure>
+Now, we'll add them all together like so: 
+<figure markdown>
+![Addition](https://raw.githubusercontent.com/Nokdef/NokdefWebsite/main/docs/StylizedPuffyClouds-14.png){ width="900" }</figure>
+If you want to test it out, you can plug them straight into the **Local Vertex Offset** entry of your shader, create a material using it and plug it into a plane:
+
+<div style="padding-bottom: 56.25%; position: relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/99mGtP4nf3E?autoplay=1&fs=0&loop=1&modestbranding=1&mute=1&playlist=x99FqxiKzlc&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>YouTube embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
+Something is clearly wrong. Aside from no color, the distortion of the plane is skewed and too extreme. This is because we added all of our layers (which contain lots of 1s) so some peaks are exceding the value of 1, resulting in a extreme distortion on our plane. To fix this, we must divide our addition by 4, normalizing our values back to the baseline we want:
+
+<div style="padding-bottom: 56.25%; position: relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/LruJ4OqO8T4?autoplay=1&fs=0&loop=1&modestbranding=1&mute=1&playlist=x99FqxiKzlc&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>YouTube embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
+
+Our layers are now working as expected, this is really the hard part of the shader, it's smooth sailing from now on! 
+
+If you want, you can play with the material parameters to find variations that catch your eye!
+
+---
+## Color & Transparency
