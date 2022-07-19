@@ -42,6 +42,9 @@ extra:
       link: mailto:<leonardo.v.alvarez@hotmail.com>
       name: Shoot me an E-Mail
   generator: false
+  analytics:
+    provider: google
+    property: G-1DLD66Z7PY
 
 
 repo_url: https://twitter.com/MrNokdef
